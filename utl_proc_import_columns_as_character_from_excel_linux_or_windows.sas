@@ -101,11 +101,11 @@ wb <- loadWorkbook("d:/xls/messy.xlsx");
 want <- readWorksheet(wb, sheet = "messy", colTypes=c("character"));
 want;
 endsubmit;
-import r=have  data=wrk.have;
+import r=want  data=wrk.want;
 run;quit;
 ');
 
-proc print data=have;
+proc print data=want;
 run;quit;
 
 
