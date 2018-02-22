@@ -107,7 +107,7 @@ Proc Import Columns as Character from Excel Linux SAS and Windows workstation  W
     want <- readWorksheet(wb, sheet = "messy", colTypes=c("character"));
     want;
     endsubmit;
-    import r=have  data=wrk.have;
+    import r=want  data=wrk.want;
     run;quit;
     ');
 
